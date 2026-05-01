@@ -1,0 +1,10 @@
+/Users/kjaymiller/zellij-autoname-pane/target/wasm32-wasip1/debug/deps/addr2line-96b29173d86a0a60.d: /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/lib.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/frame.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/function.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/line.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/lookup.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/unit.rs
+
+/Users/kjaymiller/zellij-autoname-pane/target/wasm32-wasip1/debug/deps/libaddr2line-96b29173d86a0a60.rmeta: /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/lib.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/frame.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/function.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/line.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/lookup.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/unit.rs
+
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/lib.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/frame.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/function.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/line.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/lookup.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/unit.rs:

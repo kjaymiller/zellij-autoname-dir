@@ -1,0 +1,11 @@
+/Users/kjaymiller/zellij-autoname-pane/target/wasm32-wasip1/debug/deps/bitflags-709a7b684d56ce26.d: /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/lib.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/iter.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/parser.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/traits.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/public.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/internal.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/external.rs
+
+/Users/kjaymiller/zellij-autoname-pane/target/wasm32-wasip1/debug/deps/libbitflags-709a7b684d56ce26.rmeta: /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/lib.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/iter.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/parser.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/traits.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/public.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/internal.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/external.rs
+
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/lib.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/iter.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/parser.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/traits.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/public.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/internal.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/external.rs:

@@ -1,0 +1,11 @@
+/Users/kjaymiller/zellij-autoname-pane/target/wasm32-wasip1/debug/deps/writeable-ee85953b668b760b.d: /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/lib.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/cmp.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/concat.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/impls.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/ops.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/parts_write_adapter.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/try_writeable.rs
+
+/Users/kjaymiller/zellij-autoname-pane/target/wasm32-wasip1/debug/deps/libwriteable-ee85953b668b760b.rmeta: /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/lib.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/cmp.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/concat.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/impls.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/ops.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/parts_write_adapter.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/try_writeable.rs
+
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/lib.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/cmp.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/concat.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/impls.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/ops.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/parts_write_adapter.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.6.3/src/try_writeable.rs:

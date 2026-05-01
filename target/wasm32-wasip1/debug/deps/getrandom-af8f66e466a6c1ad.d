@@ -1,0 +1,10 @@
+/Users/kjaymiller/zellij-autoname-pane/target/wasm32-wasip1/debug/deps/getrandom-af8f66e466a6c1ad.d: /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/lib.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/backends.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/error.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/util.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/../README.md /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/backends/wasi_p1.rs
+
+/Users/kjaymiller/zellij-autoname-pane/target/wasm32-wasip1/debug/deps/libgetrandom-af8f66e466a6c1ad.rmeta: /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/lib.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/backends.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/error.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/util.rs /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/../README.md /Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/backends/wasi_p1.rs
+
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/lib.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/backends.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/error.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/util.rs:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/../README.md:
+/Users/kjaymiller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.2/src/backends/wasi_p1.rs:
