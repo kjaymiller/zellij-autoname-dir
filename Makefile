@@ -5,13 +5,20 @@ INSTALL_DIR  := $(HOME)/.config/zellij/plugins
 INSTALL_PATH := $(INSTALL_DIR)/$(PLUGIN_NAME).wasm
 CONFIG_PATH  := $(HOME)/.config/zellij/config.kdl
 LAYOUT_DIR   := $(HOME)/.config/zellij/layouts
+# Zellij persists granted plugin permissions to a cache file. Path is OS-dependent.
+UNAME_S      := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+PERMISSIONS_PATH := $(HOME)/Library/Caches/org.Zellij-Contributors.Zellij/permissions.kdl
+else
+PERMISSIONS_PATH := $(or $(XDG_CACHE_HOME),$(HOME)/.cache)/zellij/permissions.kdl
+endif
 # Detect the configured default_layout from config.kdl, falling back to "default".
 # Override with: make layout LAYOUT=my-layout
 LAYOUT       ?= $(shell awk '/^[[:space:]]*default_layout[[:space:]]+"/ { match($$0, /"[^"]+"/); print substr($$0, RSTART+1, RLENGTH-2); exit }' $(CONFIG_PATH) 2>/dev/null)
 LAYOUT       := $(or $(LAYOUT),default)
 LAYOUT_PATH  := $(LAYOUT_DIR)/$(LAYOUT).kdl
 
-.PHONY: build install update clean reload layout help
+.PHONY: build install update clean reload layout permissions setup help
 
 help:
 	@echo "Targets:"
@@ -21,6 +28,8 @@ help:
 	@echo "  reload   Same as update; restart your Zellij session to pick it up"
 	@echo "  layout   Add the plugin pane to $(LAYOUT_PATH)"
 	@echo "           (override target: make layout LAYOUT=<name>)"
+	@echo "  permissions  Pre-grant the plugin's Zellij permissions"
+	@echo "  setup    install + permissions + layout (one-shot bootstrap)"
 	@echo "  clean    cargo clean"
 
 build:
@@ -69,6 +78,31 @@ layout:
 			*) echo "No file written.";; \
 		esac; \
 	fi
+
+permissions:
+	@mkdir -p $(dir $(PERMISSIONS_PATH))
+	@touch $(PERMISSIONS_PATH)
+	@if grep -qF '"$(INSTALL_PATH)"' $(PERMISSIONS_PATH); then \
+		echo "$(INSTALL_PATH) already has granted permissions in $(PERMISSIONS_PATH)."; \
+	else \
+		echo "Will append the following to $(PERMISSIONS_PATH):"; \
+		echo ""; \
+		printf '"%s" {\n    ReadApplicationState\n    ChangeApplicationState\n}\n' "$(INSTALL_PATH)"; \
+		echo ""; \
+		printf 'Proceed? [y/N] '; \
+		read ans; \
+		case "$$ans" in \
+			y|Y|yes|YES) \
+				printf '"%s" {\n    ReadApplicationState\n    ChangeApplicationState\n}\n' "$(INSTALL_PATH)" >> $(PERMISSIONS_PATH); \
+				echo "Granted. Restart Zellij to pick up the new permissions."; \
+				;; \
+			*) echo "Aborted."; exit 1;; \
+		esac; \
+	fi
+
+setup: install permissions layout
+	@echo ""
+	@echo "Bootstrap complete. Start a fresh Zellij session: zellij kill-all-sessions && zellij"
 
 clean:
 	cargo clean
