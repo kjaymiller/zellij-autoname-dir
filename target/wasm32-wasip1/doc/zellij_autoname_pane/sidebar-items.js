@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":["pipe","plugin_version","render","update"]};
