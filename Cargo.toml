@@ -2,6 +2,9 @@
 name = "zellij-autoname-pane"
 version = "0.1.0"
 edition = "2021"
+authors = ["Jay Miller"]
+license = "MIT"
+description = "Zellij plugin that auto-renames panes from cwd and foreground command"
 
 [dependencies]
 zellij-tile = "0.44"

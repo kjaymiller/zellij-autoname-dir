@@ -6,46 +6,43 @@ where every pane carries the name of its working directory.
 
 ## Prerequisites
 
-- Rust with the `wasm32-wasi` target: `rustup target add wasm32-wasi`
+- Rust with the `wasm32-wasip1` target: `rustup target add wasm32-wasip1`
 - Zellij 0.40 or newer
 - A clone of this repository
 
-## 1. Build the plugin
+## 1. Build and install the plugin
 
 From the repository root:
 
 ```sh
-cargo build --release --target wasm32-wasi
+make update
 ```
 
-When it finishes you will have a file at:
+This builds the release WASM and copies it to
+`~/.config/zellij/plugins/zellij-autoname-pane.wasm`.
 
-```
-target/wasm32-wasi/release/zellij-autoname-pane.wasm
-```
+## 2. Add it to your default layout
 
-Note its absolute path — you'll need it in the next step.
-
-## 2. Create a layout that loads the plugin
-
-Save the following as `~/autoname.kdl`, replacing the path with your own:
+Edit `~/.config/zellij/layouts/default.kdl` (create it if it doesn't
+exist):
 
 ```kdl
 layout {
     pane
     pane size=1 borderless=true {
-        plugin location="file:/Users/you/path/to/zellij-autoname-pane.wasm"
+        plugin location="file:~/.config/zellij/plugins/zellij-autoname-pane.wasm"
     }
 }
 ```
 
-## 3. Launch Zellij with the layout
+## 3. Start a fresh Zellij session
 
 ```sh
-zellij --layout ~/autoname.kdl
+zellij kill-all-sessions   # if you have one running
+zellij
 ```
 
-The first time you load it, Zellij will prompt to grant the plugin
+The first time the plugin loads, Zellij prompts to grant
 `ReadApplicationState` and `ChangeApplicationState`. Accept both.
 
 ## 4. Watch it work
