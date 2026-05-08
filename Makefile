@@ -3,8 +3,13 @@ TARGET       := wasm32-wasip1
 WASM         := target/$(TARGET)/release/$(PLUGIN_NAME).wasm
 INSTALL_DIR  := $(HOME)/.config/zellij/plugins
 INSTALL_PATH := $(INSTALL_DIR)/$(PLUGIN_NAME).wasm
+CONFIG_PATH  := $(HOME)/.config/zellij/config.kdl
 LAYOUT_DIR   := $(HOME)/.config/zellij/layouts
-LAYOUT_PATH  := $(LAYOUT_DIR)/default.kdl
+# Detect the configured default_layout from config.kdl, falling back to "default".
+# Override with: make layout LAYOUT=my-layout
+LAYOUT       ?= $(shell awk '/^[[:space:]]*default_layout[[:space:]]+"/ { match($$0, /"[^"]+"/); print substr($$0, RSTART+1, RLENGTH-2); exit }' $(CONFIG_PATH) 2>/dev/null)
+LAYOUT       := $(or $(LAYOUT),default)
+LAYOUT_PATH  := $(LAYOUT_DIR)/$(LAYOUT).kdl
 
 .PHONY: build install update clean reload layout help
 
@@ -15,6 +20,7 @@ help:
 	@echo "  update   build + install (rebuild and replace the installed plugin)"
 	@echo "  reload   Same as update; restart your Zellij session to pick it up"
 	@echo "  layout   Add the plugin pane to $(LAYOUT_PATH)"
+	@echo "           (override target: make layout LAYOUT=<name>)"
 	@echo "  clean    cargo clean"
 
 build:
@@ -31,6 +37,7 @@ reload: update
 
 layout:
 	@mkdir -p $(LAYOUT_DIR)
+	@echo "Targeting layout: $(LAYOUT_PATH)"
 	@if [ -f $(LAYOUT_PATH) ] && grep -q "$(PLUGIN_NAME).wasm" $(LAYOUT_PATH); then \
 		echo "$(LAYOUT_PATH) already references $(PLUGIN_NAME).wasm — nothing to do."; \
 		exit 0; \
